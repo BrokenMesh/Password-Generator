@@ -6,5 +6,5 @@ function validateForm(){
     var hash = CryptoJS.SHA3(pass+name).toString();
 
     //document.write(encrypted)
-    document.getElementById("genpass").innerHTML = hash.slice(0,10);
+    document.getElementById("genpass").innerHTML = hash.slice(0,18);
 }

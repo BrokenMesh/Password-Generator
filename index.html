@@ -12,14 +12,14 @@
         <h3 id=subtitle>Enter your password and the name of the service you'r loging in to</h3>   
 
         <div>
-            <form method="post" name="form" class="input-group" onsubmit="validateForm(); return false;">
+            <form method="post" name="form" class="input-group" onsubmit="validateForm(event);">
                     <label for="pass">Password:</label>
-                    <input type="password" id="pass" name="password" placeholder="Password" required>
+                    <input type="password" id="pass" name="password" placeholder="Password" required/>
 
                     <label for="name">Service name (always use the same name for the service):</label>
-                    <input type="text" id="name" name="name" placeholder="Service (Google)" required>
+                    <input type="text" id="name" name="name" placeholder="Service (Google)" required/>
 
-                <input type="submit" value="Submit" >
+                    <input type="submit" value="Submit"/>
             </form>
         </div>
         <div id=spacing></div>

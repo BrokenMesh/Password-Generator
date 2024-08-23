@@ -1,5 +1,7 @@
 
-function validateForm(){
+function validateForm(event){
+    event.preventDefault();
+    
     var pass = document.forms["form"]["pass"].value;
     var name = document.forms["form"]["name"].value;
 
